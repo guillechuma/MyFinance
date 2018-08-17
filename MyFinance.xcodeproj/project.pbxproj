@@ -12,6 +12,7 @@
 		B4403CC62126F64D007DFAE6 /* MyFinance.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B4403CC42126F64D007DFAE6 /* MyFinance.xcdatamodeld */; };
 		B4403CC82126F64F007DFAE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4403CC72126F64F007DFAE6 /* Assets.xcassets */; };
 		B4403CCB2126F64F007DFAE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4403CC92126F64F007DFAE6 /* LaunchScreen.storyboard */; };
+		B4403CD32126F722007DFAE6 /* FinanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		B4403CC72126F64F007DFAE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4403CCA2126F64F007DFAE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4403CCC2126F64F007DFAE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				B4403CBD2126F64D007DFAE6 /* AppDelegate.swift */,
+				B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */,
 				B4403CC12126F64D007DFAE6 /* Main.storyboard */,
 				B4403CC72126F64F007DFAE6 /* Assets.xcassets */,
 				B4403CC92126F64F007DFAE6 /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				B4403CBE2126F64D007DFAE6 /* AppDelegate.swift in Sources */,
 				B4403CC62126F64D007DFAE6 /* MyFinance.xcdatamodeld in Sources */,
+				B4403CD32126F722007DFAE6 /* FinanceTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
