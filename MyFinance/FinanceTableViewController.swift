@@ -51,9 +51,9 @@ class FinanceTableViewController: UITableViewController {
     }
     
     // This is a temporary data structure to test cells
-    let expences = [10, 20 ,30, 10, 45, 10.2]
-    let moneyLeft = [100.0, 40, 20, 10, 0, -10]
-    let totalMoney = [10, 30, 60, 70, 115, 125.2]
+    var expences = [10, 20 ,30, 10, 45, 10.2]
+    var moneyLeft = [100.0, 40, 20, 10, 0, -10]
+    var totalMoney = [10, 30, 60, 70, 115, 125.2]
     
     /*
     // Override to support conditional editing of the table view.
@@ -67,6 +67,10 @@ class FinanceTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
             // Delete the row from the data source
+            expences.remove(at: indexPath.row)
+            moneyLeft.remove(at: indexPath.row)
+            totalMoney.remove(at: indexPath.row)
+            
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
