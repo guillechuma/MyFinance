@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="v2c-zM-6Td">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6iP-XR-MVh">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,7 +11,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Finance Table View Controller-->
+        <!--My Finance-->
         <scene sceneID="E4F-aG-R4H">
             <objects>
                 <tableViewController id="v2c-zM-6Td" customClass="FinanceTableViewController" customModule="MyFinance" customModuleProvider="target" sceneMemberID="viewController">
@@ -75,8 +75,27 @@
                             <outlet property="delegate" destination="v2c-zM-6Td" id="WnC-e5-yWQ"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="My Finance" id="Slc-iH-MK9"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Id-vD-3Z9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="864.79999999999995" y="24.7376311844078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1A3-ye-vlq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="6iP-XR-MVh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="b5Y-ca-9wj">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="v2c-zM-6Td" kind="relationship" relationship="rootViewController" id="P96-ga-zFG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aTY-LW-4vJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-74.400000000000006" y="24.7376311844078"/>
         </scene>
