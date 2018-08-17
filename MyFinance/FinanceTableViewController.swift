@@ -39,16 +39,21 @@ class FinanceTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cellIdentifier = "Cell"
-        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath)
+        // Downcast cell to be custom finance cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! FinanceTableViewCell
 
         // Configure the cell...
-        cell.textLabel?.text = String(expences[indexPath.row])
+        cell.moneySpentLabel.text = String(expences[indexPath.row])
+        cell.moneyLeftLabel.text = String(moneyLeft[indexPath.row])
+        cell.totalMoneyLabel.text = String(totalMoney[indexPath.row])
 
         return cell
     }
     
     // This is a temporary data structure to test cells
     let expences = [10, 20 ,30, 10, 45, 10.2]
+    let moneyLeft = [100.0, 40, 20, 10, 0, -10]
+    let totalMoney = [10, 30, 60, 70, 115, 125.2]
     
     /*
     // Override to support conditional editing of the table view.

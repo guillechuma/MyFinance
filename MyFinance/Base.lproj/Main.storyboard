@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="fYc-Ti-Swk">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="fYc-Ti-Swk" customClass="FinanceTableViewCell" customModule="MyFinance" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fYc-Ti-Swk" id="ih6-bv-sDp">
@@ -63,6 +63,11 @@
                                         <constraint firstItem="xmX-Zd-zvg" firstAttribute="top" secondItem="ih6-bv-sDp" secondAttribute="topMargin" id="t1a-KE-SIS"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="moneyLeftLabel" destination="JIw-Qf-bU3" id="2Q6-L7-LYl"/>
+                                    <outlet property="moneySpentLabel" destination="CNl-tc-d3L" id="wwS-8r-JR9"/>
+                                    <outlet property="totalMoneyLabel" destination="sSJ-HT-qEA" id="tSA-nR-zwy"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
