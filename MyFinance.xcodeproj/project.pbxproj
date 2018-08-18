@@ -15,6 +15,8 @@
 		B4403CD32126F722007DFAE6 /* FinanceTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */; };
 		B459CBB62127075A00B3F30E /* FinanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459CBB52127075A00B3F30E /* FinanceTableViewCell.swift */; };
 		B459CBB821271FA400B3F30E /* FinanceDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459CBB721271FA400B3F30E /* FinanceDetailViewController.swift */; };
+		B459CBBA2127371100B3F30E /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459CBB92127371100B3F30E /* Transaction.swift */; };
+		B459CBBC21273A5E00B3F30E /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B459CBBB21273A5E00B3F30E /* Wallet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewController.swift; sourceTree = "<group>"; };
 		B459CBB52127075A00B3F30E /* FinanceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceTableViewCell.swift; sourceTree = "<group>"; };
 		B459CBB721271FA400B3F30E /* FinanceDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceDetailViewController.swift; sourceTree = "<group>"; };
+		B459CBB92127371100B3F30E /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		B459CBBB21273A5E00B3F30E /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				B4403CD22126F722007DFAE6 /* FinanceTableViewController.swift */,
 				B459CBB52127075A00B3F30E /* FinanceTableViewCell.swift */,
 				B459CBB721271FA400B3F30E /* FinanceDetailViewController.swift */,
+				B459CBB92127371100B3F30E /* Transaction.swift */,
+				B459CBBB21273A5E00B3F30E /* Wallet.swift */,
 				B4403CC12126F64D007DFAE6 /* Main.storyboard */,
 				B4403CC72126F64F007DFAE6 /* Assets.xcassets */,
 				B4403CC92126F64F007DFAE6 /* LaunchScreen.storyboard */,
@@ -145,7 +151,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B459CBB62127075A00B3F30E /* FinanceTableViewCell.swift in Sources */,
+				B459CBBC21273A5E00B3F30E /* Wallet.swift in Sources */,
 				B4403CBE2126F64D007DFAE6 /* AppDelegate.swift in Sources */,
+				B459CBBA2127371100B3F30E /* Transaction.swift in Sources */,
 				B459CBB821271FA400B3F30E /* FinanceDetailViewController.swift in Sources */,
 				B4403CC62126F64D007DFAE6 /* MyFinance.xcdatamodeld in Sources */,
 				B4403CD32126F722007DFAE6 /* FinanceTableViewController.swift in Sources */,

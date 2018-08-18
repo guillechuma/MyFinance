@@ -9,7 +9,8 @@
 import UIKit
 
 class FinanceTableViewController: UITableViewController {
-
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +19,15 @@ class FinanceTableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        
+        // Set table view background color to gray
+        tableView.backgroundColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
+        
+        // Remove footer of each cell
+        tableView.tableFooterView = UIView(frame: CGRect.zero)
+        
+        // Change separators to light gray
+        tableView.separatorColor = UIColor(red: 240.0/255.0, green: 240.0/255.0, blue: 240.0/255.0, alpha: 0.2)
     }
 
     override func didReceiveMemoryWarning() {
@@ -46,6 +56,9 @@ class FinanceTableViewController: UITableViewController {
         cell.moneySpentLabel.text = String(expences[indexPath.row])
         cell.moneyLeftLabel.text = String(moneyLeft[indexPath.row])
         cell.totalMoneyLabel.text = String(totalMoney[indexPath.row])
+        
+        // Clear cell background
+        cell.backgroundColor = UIColor.clear
 
         return cell
     }
